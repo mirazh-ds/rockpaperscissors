@@ -4,7 +4,7 @@
 function playRound() {
 
 
-const playerChoice = prompt("Sasso, Carta, Forbici"); 
+const playerChoice = prompt("Sasso, Carta, Forbici").toLowerCase(); 
 const scelte = ["Rock", "Paper", "Scissors"];
 const computerChoice = scelte[Math.floor(Math.random() * scelte.length)];
 
