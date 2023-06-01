@@ -11,17 +11,17 @@ const cpuChoice = document.getElementById("cpuChoice");
 let pcPt = 0;
 let cpuPt = 0;
 
-cpuPoints.textContent = `Punteggio CPU: ${cpuPt}`;
-pcPoints.textContent = `Punteggio giocatore: ${pcPt}`;
+cpuPoints.textContent = `CPU score: ${cpuPt}`;
+pcPoints.textContent = `Player score: ${pcPt}`;
 
-pcChoice.textContent = "Scelta giocatore:";
-cpuChoice.textContent = "Scelta CPU:";
+pcChoice.textContent = "Player choice:";
+cpuChoice.textContent = "CPU choice:";
 
 const scelte = ["Rock", "Paper", "Scissors"];
 
-const vittoria = "Hai vinto";
-const sconfitta = "Hai perso";
-const pareggio = "Pareggio";
+const vittoria = "Player won";
+const sconfitta = "CPU won";
+const pareggio = "Tie";
 
 rock.addEventListener("click", () => {
     const computerChoice = scelte[Math.floor(Math.random() * scelte.length)];
@@ -33,19 +33,19 @@ rock.addEventListener("click", () => {
         risultato.textContent =  vittoria;   pcPt += 1; 
     }
 
-    pcPoints.textContent = `Punteggio giocatore: ${pcPt}`;
-    cpuPoints.textContent = `Punteggio CPU: ${cpuPt}`;
+    pcPoints.textContent = `Player score: ${pcPt}`;
+    cpuPoints.textContent = `CPU score: ${cpuPt}`;
 
-    pcChoice.textContent = 'Scelta giocatore: Sasso';
-    cpuChoice.textContent = `Scelta CPU: ${computerChoice}`;
+    pcChoice.textContent = 'Player choice: Rock';
+    cpuChoice.textContent = `CPU choice: ${computerChoice}`;
 
     if (cpuPt == 5) {
-        alert("Vittoria CPU");
+        alert("CPU wins");
         setTimeout("location.reload(true)");
     }
 
     if (pcPt == 5) {
-        alert("Vittoria giocatore");
+        alert("Player wins");
         setTimeout("location.reload(true)");
     }
 
@@ -60,19 +60,19 @@ paper.addEventListener("click", () => {
     } else {
         risultato.textContent = sconfitta;   cpuPt += 1; 
     }
-    pcPoints.textContent = `Punteggio giocatore: ${pcPt}`;
-    cpuPoints.textContent = `Punteggio CPU: ${cpuPt}`;
+    pcPoints.textContent = `Player score: ${pcPt}`;
+    cpuPoints.textContent = `CPU score: ${cpuPt}`;
 
-    pcChoice.textContent = 'Scelta giocatore: Carta';
-    cpuChoice.textContent = `Scelta CPU: ${computerChoice}`;
+    pcChoice.textContent = 'Player choice: Paper';
+    cpuChoice.textContent = `CPU choice: ${computerChoice}`;
 
     if (cpuPt == 5) {
-        alert("Vittoria CPU");
+        alert("CPU wins");
         setTimeout("location.reload(true)");
     }
 
     if (pcPt == 5) {
-        alert("Vittoria giocatore");
+        alert("Player wins");
         setTimeout("location.reload(true)");
     }
 
@@ -87,19 +87,19 @@ scissors.addEventListener("click", () => {
     } else { 
         risultato.textContent = pareggio;    
     }
-    pcPoints.textContent = `Punteggio giocatore: ${pcPt}`;
-    cpuPoints.textContent = `Punteggio CPU: ${cpuPt}`;
+    pcPoints.textContent = `Player score: ${pcPt}`;
+    cpuPoints.textContent = `CPU score: ${cpuPt}`;
 
-    pcChoice.textContent = 'Scelta giocatore: Forbici';
-    cpuChoice.textContent = `Scelta CPU: ${computerChoice}`;
+    pcChoice.textContent = 'Player choice: Scissors';
+    cpuChoice.textContent = `CPU choice: ${computerChoice}`;
 
     if (cpuPt == 5) {
-        alert("Vittoria CPU");
+        alert("CPU wins");
         setTimeout("location.reload(true)");
     }
 
     if (pcPt == 5) {
-        alert("Vittoria giocatore");
+        alert("Player wins");
         setTimeout("location.reload(true)");
     }
 })
