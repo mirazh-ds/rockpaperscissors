@@ -2,29 +2,34 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Sasso carta forbici</title>
+        <title>Rock, paper, scissors</title>
         
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1 class="titolo">Rock, paper, scissors</h1>
-
+        <div class="titoloDiv">
+            <h1 class="titolo">Rock, paper, scissors</h1>
+        </div>
         
-        <div class="btn">       
-            <button id="rock">Rock</button>
-            <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
+        <div class="btnDiv">       
+            <button class="btn rock"id="rock">Rock</button>
+            <button class="btn paper" id="paper">Paper</button>
+            <button class="btn scissors" id="scissors">Scissors</button>
         </div> 
+
         <div class="text">
-            <div class="punteggi">
-                <p id="result"></p>
-                <p id="pcPoints"></p>
-                <p id="cpuPoints"></p>
-            </div>
             <div class="choices">
                 <p id="cpuChoice"></p>
                 <p id="pcChoice"></p>
-            </div>    
+                <p class="result" id="result"></p>
+            </div>  
+
+            <div class="punteggi">
+                
+                <p class="pcPoints" id="pcPoints"></p>
+                <p class="pcPoints" id="cpuPoints"></p>
+            </div>
+               
         </div>
 
 
