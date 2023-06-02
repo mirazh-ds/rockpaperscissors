@@ -1,52 +1,112 @@
-.body {
+body {
+    background-color: lightblue;
     padding: 0px;
     margin: 0px;
-    border: 0px;
+
 }
 
 .titoloDiv {
     padding: 50px;
-    background-color: rgb(98, 98, 226);
+    background-color:blue;
     margin: 0px;
     border: 0px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .titolo {
     font-family: Futura, sans-serif;
     font-weight: 500;
-    text-align: center;
     color: white;
     font-size: 50px;
 }
 
+.imgRps {
+    height: 100px;
+    width: 100px;
+}
+
 .btnDiv {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
     
 }
 
 .btn {
     border: none;
-    height: 150px;
-    width: 250px;
+    height: 75px;
+    width: 150px;
     color: white;
     border-radius: 5px;
+    margin-bottom: 40px;
+    transition: 0.5;
+    font-size: 17px;
 }
 
 .rock {
     background-color: rgb(146, 0, 0);
+    margin: 10px;
+}
+
+.rock:hover {
+    background-color: rgb(194, 0, 0);
 }
 
 .paper {
-    background-color: green;
+    background-color: green; 
+    margin: 10px;
+}
+
+.paper:hover {
+    background-color: rgb(0, 171, 0);
+   
 }
 
 .scissors {
     background-color: rgb(0, 0, 143);
+    margin: 10px;
+}
+
+.scissors:hover {
+    background-color: rgb(2, 2, 201);
 }
 
 .punteggi {
     display: flex;
     justify-content: space-around;
 }
+
+.points {
+    font-family: Helvetica, sans-serif;
+    font-size: 23px;
+    font-weight: lighter;
+    
+    
+}
+
+.choices {
+    margin-left: 25px;
+    margin-top: 40px;
+
+}
+
+.choice {
+    font-family: Helvetica, sans-serif;
+    font-size: 23px;
+    font-weight: lighter;
+    
+}
+
+footer {
+    background-color: white;
+    font-size: 10px;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    padding-top: 1.3rem;
+}
+
 

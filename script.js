@@ -19,9 +19,9 @@ cpuChoice.textContent = "CPU choice:";
 
 const scelte = ["Rock", "Paper", "Scissors"];
 
-const vittoria = "Player won";
-const sconfitta = "CPU won";
-const pareggio = "Tie";
+const vittoria = "Result: Player won";
+const sconfitta = "Result: CPU won";
+const pareggio = "Result: Tie";
 
 rock.addEventListener("click", () => {
     const computerChoice = scelte[Math.floor(Math.random() * scelte.length)];
