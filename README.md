@@ -1,6 +1,6 @@
 # rockpaperscissors
 
-Sasso carta forbici su JS, no stile atm;
+Sasso carta forbici su JS;
 
 regole basate su https://www.wikihow.com/Play-Rock,-Paper,-Scissors;
 
